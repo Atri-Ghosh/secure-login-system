@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-container, .dashboard-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.login-header {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.login-header h2 {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.login-header p {
+    color: #666;
+    font-size: 14px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #444;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper i.fa-regular, 
+.input-wrapper i.fa-solid {
+    position: absolute;
+    left: 14px;
+    color: #888;
+    font-size: 16px;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 12px 15px 12px 42px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-wrapper input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+}
+
+.toggle-password {
+    left: auto !important;
+    right: 14px;
+    cursor: pointer;
+    color: #888;
+}
+
+.toggle-password:hover {
+    color: #333;
+}
+
+/* Error and Success States */
+.error-message {
+    color: #e53e3e;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
+
+.input-wrapper input.error {
+    border-color: #e53e3e;
+}
+
+/* Password Strength Meter Styles */
+.strength-container {
+    margin-top: 8px;
+}
+
+.strength-bars {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 4px;
+}
+
+.bar {
+    flex: 1;
+    height: 4px;
+    background-color: #e2e8f0;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.strength-text {
+    font-size: 11px;
+    color: #718096;
+}
+
+/* Form Actions Row */
+.form-actions-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 13px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #4a5568;
+    cursor: pointer;
+}
+
+.forgot-link {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+/* Submit Button */
+button[type="submit"], .logout-btn {
+    width: 100%;
+    padding: 12px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button[type="submit"]:hover, .logout-btn:hover {
+    background: #5563c1;
+}
+
+/* Dashboard UI Styling */
+.dashboard-card {
+    text-align: center;
+}
+
+.success-icon {
+    font-size: 50px;
+    color: #48bb78;
+    margin-bottom: 15px;
+}
+
+.dashboard-card h2 {
+    color: #2d3748;
+    margin-bottom: 10px;
+}
+
+.dashboard-card p {
+    color: #718096;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
